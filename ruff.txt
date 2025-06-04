@@ -1,0 +1,12 @@
+[lint]
+select = ["E", "F", "W", "I", "D", "B", "C4", "S", "T"]
+ignore = ["D203", "D213"]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+indent-width = 4
+line-length = 88
+
+[lint.per-file-ignores]
+"tests/*" = ["S101"]
