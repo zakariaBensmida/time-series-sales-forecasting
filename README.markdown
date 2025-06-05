@@ -17,69 +17,69 @@ Sales forecasting using the Kaggle Superstore Sales dataset with ARIMA, Prophet,
 
 ## Setup
 1. **Clone Repository**:
-   ```cmd
+   cmd
    git clone https://github.com/your-username/time-series-sales-forecasting.git
    cd time-series-sales-forecasting
-   ```
+   
 
 2. **Create Virtual Environment**:
-   ```cmd
+   cmd
    python -m venv .venv
    .venv\Scripts\activate
-   ```
+
 
 3. **Install Dependencies**:
-   ```cmd
+   cmd
    pip install -r requirements.txt
-   ```
+   
 
 4. **Download Kaggle Dataset**:
    - Visit https://www.kaggle.com/datasets/rohitsahoo/sales-forecasting
    - Download `train.csv`
    - Create `data/raw/`:
-     ```cmd
+     cmd
      mkdir data\raw
-     ```
+     
    - Place `train.csv` in `data/raw/`
 
 5. **Configure Environment**:
    - Copy `.env.example`:
-     ```cmd
+     cmd
      copy .env.example .env
-     ```
+     
    - Edit `.env` in Notepad:
-     ```plaintext
+     plaintext
      DATA_DIR=data
      AWS_ACCESS_KEY_ID=
      AWS_SECRET_ACCESS_KEY=
      AWS_REGION=
-     ```
+     
 
 ## Running
 1. **Format Code**:
-   ```cmd
+   cmd
    black .
    ruff check --fix .
-   ```
+   
 
 2. **Run Analysis**:
-   ```cmd
+      cmd
    python main.py
-   ```
+
    - Generates `output/sales_predictions.csv`
 
 3. **Launch Dashboard**:
-   ```cmd
+      cmd
    streamlit run src/dashboard.py
-   ```
+
    - Opens http://localhost:8501
 
 4. **Optional AWS**:
    - Add AWS credentials to `.env`
    - Upload:
-     ```cmd
+     cmd
      python src/aws_utils.py output/sales_predictions.csv your-bucket sales_predictions.csv
-     ```
+     
 
 ## Troubleshooting
 - **Browser Errors**: Ensure files (`README.md`, `src/dashboard.py`) are in correct paths, use Chrome/Edge.
@@ -87,7 +87,7 @@ Sales forecasting using the Kaggle Superstore Sales dataset with ARIMA, Prophet,
 - **ModuleNotFoundError**: Reinstall dependencies: `pip install -r requirements.txt`.
 
 ## Structure
-```
+
 time-series-sales-forecasting/
 ├── src/                    # Code
 │   ├── __init__.py
@@ -114,4 +114,4 @@ time-series-sales-forecasting/
 MIT
 
 ## Contact
-[Your Name] (your.email@example.com)
+[zakaria bensmida] (zakariaibensmida@gmail.com)
