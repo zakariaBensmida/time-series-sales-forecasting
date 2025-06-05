@@ -114,4 +114,4 @@ time-series-sales-forecasting/
 MIT
 
 ## Contact
-[Your Name] (your.email@example.com)
+[zakaria bensmida] (zakariaibensmida@gmail.com)
